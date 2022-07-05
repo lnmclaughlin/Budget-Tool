@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Budget App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Monthly Budget:</h1>
+        <p id="monthly_budget"></p>
+        <form>
+          <input type="number" id="income_input" placeholder="Monthly income" />
+          <button id="update_budget_button">Update budget</button>
+        </form>
+      </section>
+      <section>
+        <h2>Add expense:</h2>
+        <form>
+          <input type="text" id="name_input" placeholder="Expense name" />
+          <input type="number" id="amount_input" placeholder="Expense amount" />
+          <button id="add_expense_button">Add expense</button>
+        </form>
+      </section>
+      <section>
+        <h2>Expense list:</h2>
+        <div id="expense_list"></div>
+      </section>
+      <section>
+        <h2>Total expenses:</h2>
+        <p id="total_expenses"></p>
+      </section>
+      <section>
+        <h2>Remaining balance:</h2>
+        <p id="remaining_balance"></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
